@@ -1,0 +1,115 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-02T18:09:11.066Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13068738000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.Hooks.BeforeSteps()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Check available services under \u0027Booking Available Services\u0027 menu",
+        "description": "",
+        "id": "view-available-services-under--booking-available-services--menu;check-available-services-under--booking-available-services--menu",
+        "after": [
+          {
+            "result": {
+              "duration": 947942200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 978379000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on homepage page",
+            "match": {
+              "location": "StepDefs.Homepage_Steps.user_is_on_homepage_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6088188400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on \u0027Booking Available Service\u0027 menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Booking Available Service\u0027",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.Homepage_Steps.user_clicks_on_menu(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 213427400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should be able to see all \u003cavailable services\u003e",
+            "match": {
+              "location": "StepDefs.Servicespage_Steps.user_should_be_able_to_see_all_available_services(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "available services"
+                ]
+              },
+              {
+                "cells": [
+                  "ONLINE MEDICAL CONSULTATION"
+                ]
+              },
+              {
+                "cells": [
+                  "HOME CARE SERVICES"
+                ]
+              },
+              {
+                "cells": [
+                  "Pragnancy Consulting"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user_features"
+          }
+        ]
+      }
+    ],
+    "name": "View available services under \u0027Booking Available Services\u0027 menu",
+    "description": "",
+    "id": "view-available-services-under--booking-available-services--menu",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/User.feature",
+    "tags": []
+  }
+]
