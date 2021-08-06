@@ -1,0 +1,19 @@
+{
+
+
+
+
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir" : "cypress/reports",
+        "files" : "cypress/reports/*.json",
+        "reportFilename" : "report",
+        "overwrite" : false,
+        "html" : false,
+        "json" : true,
+        "charts" : true,
+        "reportPageTitle": "MIT Sloan Regression Test Suite"
+    },
+    "video" : false
+
+}

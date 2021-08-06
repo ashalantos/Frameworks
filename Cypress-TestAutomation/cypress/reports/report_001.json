@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-06T09:43:51.572Z",
+    "end": "2021-08-06T09:44:13.520Z",
+    "duration": 21948,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3e9f651b-80eb-4872-8206-36f7afa371c1",
+      "title": "",
+      "fullFile": "cypress/integration/testcases/HomePage_spec.js",
+      "file": "cypress/integration/testcases/HomePage_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8f6d2221-e54a-4a60-be43-b4637dc6da52",
+          "title": "HomePage Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Valid Login",
+              "fullTitle": "HomePage Suite Valid Login",
+              "timedOut": null,
+              "duration": 18543,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(\"gayathri.pradeep\", \"password123!\");\nloginPage.toolbarItemUser().contains('gayathri.pradeep');",
+              "err": {},
+              "uuid": "36975504-ecab-4a8b-926e-2c2823a55771",
+              "parentUUID": "8f6d2221-e54a-4a60-be43-b4637dc6da52",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "36975504-ecab-4a8b-926e-2c2823a55771"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18543,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "files": "cypress/reports/*.json",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true,
+        "reportPageTitle": "MIT Sloan Regression Test Suite"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

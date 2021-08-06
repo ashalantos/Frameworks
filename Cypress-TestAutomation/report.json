@@ -1,0 +1,330 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 6,
+    "passes": 3,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-08-06T09:42:26.746Z",
+    "end": "2021-08-06T09:45:20.571Z",
+    "duration": 87004,
+    "testsRegistered": 6,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "3e9f651b-80eb-4872-8206-36f7afa371c1",
+      "title": "",
+      "fullFile": "cypress/integration/testcases/HomePage_spec.js",
+      "file": "cypress/integration/testcases/HomePage_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8f6d2221-e54a-4a60-be43-b4637dc6da52",
+          "title": "HomePage Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Valid Login",
+              "fullTitle": "HomePage Suite Valid Login",
+              "timedOut": null,
+              "duration": 18543,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(\"gayathri.pradeep\", \"password123!\");\nloginPage.toolbarItemUser().contains('gayathri.pradeep');",
+              "err": {},
+              "uuid": "36975504-ecab-4a8b-926e-2c2823a55771",
+              "parentUUID": "8f6d2221-e54a-4a60-be43-b4637dc6da52",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "36975504-ecab-4a8b-926e-2c2823a55771"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18543,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "1fbc9fde-dc70-45a4-b580-5376f4d7249a",
+      "title": "",
+      "fullFile": "cypress/integration/testcases/Login_spec.js",
+      "file": "cypress/integration/testcases/Login_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0abdf4ab-3c68-41c5-8b28-87f8f84e1921",
+          "title": "Login Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "InValid Login",
+              "fullTitle": "Login Suite InValid Login",
+              "timedOut": null,
+              "duration": 11367,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(\"wrongusername\", \"wrongpassword\");\nloginPage.invalidLoginErrorMsg().contains('Unrecognized username or password. Forgot your password?');",
+              "err": {},
+              "uuid": "a020f25e-e4d8-4393-93eb-cfe3bf2ee74a",
+              "parentUUID": "0abdf4ab-3c68-41c5-8b28-87f8f84e1921",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Valid Login",
+              "fullTitle": "Login Suite Valid Login",
+              "timedOut": null,
+              "duration": 8266,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(\"gayathri.pradeep\", \"password123!\");\nloginPage.toolbarItemUser().contains('gayathri.pradeep');",
+              "err": {},
+              "uuid": "f48f1dab-80c0-4865-bfec-4403ffbc2e49",
+              "parentUUID": "0abdf4ab-3c68-41c5-8b28-87f8f84e1921",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a020f25e-e4d8-4393-93eb-cfe3bf2ee74a",
+            "f48f1dab-80c0-4865-bfec-4403ffbc2e49"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19633,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "81470a71-6221-43c5-8818-a43859d222af",
+      "title": "",
+      "fullFile": "cypress/integration/testcases/Logout_spec.js",
+      "file": "cypress/integration/testcases/Logout_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f614e44a-1a33-401a-8b73-5f09d5889227",
+          "title": "Logout Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Successful Logout Test",
+              "fullTitle": "Logout Suite Successful Logout Test",
+              "timedOut": null,
+              "duration": 28150,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"cypress/screenshots/testcases/Logout_spec.js/Logout Suite -- Successful Logout Test (failed).png\"",
+              "code": "loginPage.login(\"gayathri.pradeep\", \"password123!\");\nlogoutPage.logout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#toolbar-item-user`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#toolbar-item-user`, but never found it.\n    at LogoutPage.logout (https://mitsloan.mit.edu/__cypress/tests?p=cypress\\integration\\testcases\\Logout_spec.js:216:32)\n    at Context.eval (https://mitsloan.mit.edu/__cypress/tests?p=cypress\\integration\\testcases\\Logout_spec.js:129:16)",
+                "diff": null
+              },
+              "uuid": "2c67fef7-19ac-4fac-95f2-9f7ea6876d77",
+              "parentUUID": "f614e44a-1a33-401a-8b73-5f09d5889227",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "2c67fef7-19ac-4fac-95f2-9f7ea6876d77"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 28150,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "af48e9d0-5125-45e0-b782-fd5276c0df29",
+      "title": "",
+      "fullFile": "cypress/integration/testcases/AddContent.js",
+      "file": "cypress/integration/testcases/AddContent.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bbe9bf93-3707-4202-9164-cf61e13ee936",
+          "title": "Add Content Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add Article Content 1",
+              "fullTitle": "Add Content Test Suite Add Article Content 1",
+              "timedOut": null,
+              "duration": 20678,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"cypress/screenshots/testcases/AddContent.js/Add Content Test Suite -- Add Article Content 1 (failed).png\"",
+              "code": "addContentPage.addArticle(\"Press\", \"Test Article Cypress\", \"Cypress is description\");\naddContentPage.deleteArticle();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#toolbar-item-user`, but never found it.\n\nBecause this error occurred during a `after each` hook we are skipping the remaining tests in the current suite: `Add Content Test Suite`",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#toolbar-item-user`, but never found it.\n\nBecause this error occurred during a `after each` hook we are skipping the remaining tests in the current suite: `Add Content Test Suite`\n    at LogoutPage.logout (https://mitsloan.mit.edu/__cypress/tests?p=cypress\\integration\\testcases\\AddContent.js:327:32)\n    at Context.eval (https://mitsloan.mit.edu/__cypress/tests?p=cypress\\integration\\testcases\\AddContent.js:142:16)",
+                "diff": null
+              },
+              "uuid": "4717e7f2-4db3-4c91-8045-bbf497eb0d6a",
+              "parentUUID": "bbe9bf93-3707-4202-9164-cf61e13ee936",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add Article Content 2",
+              "fullTitle": "Add Content Test Suite Add Article Content 2",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "addContentPage.addArticle(\"Ideas Made to Matter\", \"Cypress Test Article \", \"Cypress is description\");\naddContentPage.deleteArticle();",
+              "err": {},
+              "uuid": "724fc38d-88ac-408b-a6b0-ef5c81238a4b",
+              "parentUUID": "bbe9bf93-3707-4202-9164-cf61e13ee936",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "4717e7f2-4db3-4c91-8045-bbf497eb0d6a"
+          ],
+          "pending": [],
+          "skipped": [
+            "724fc38d-88ac-408b-a6b0-ef5c81238a4b"
+          ],
+          "duration": 20678,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "files": "cypress/reports/*.json",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true,
+        "reportPageTitle": "MIT Sloan Regression Test Suite"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

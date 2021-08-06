@@ -1,0 +1,22 @@
+{
+  "name": "cypress-testautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "clean-reports": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports",
+    "run-all-tests": "./node_modules/.bin/cypress run --spec cypress/integration/testcases/*.js --browser chrome",
+    "merge-all-json":"npx mochawesome-merge cypress/reports/*.json > report.json",
+    "create-html-report": "marge report.json --reportDir ./ --inline",
+    "generate-report": "npm run merge-all-json && npm run create-html-report",
+    "tests":"npm run clean-reports || npm run run-all-tests || npm run generate-report"
+  },
+  "author": "ashalantos",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.0.0",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0"
+  }
+}
