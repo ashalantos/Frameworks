@@ -12,7 +12,7 @@ describe('Add Content Test Suite', function() {
     const addContentPage = new AddContentPage()
 
     beforeEach(function(){
-        loginPage.login("gayathri.pradeep","password123!")
+        loginPage.login("ashal.anto","password123!")
     })
 
     it('Add Article Content 1', function() {

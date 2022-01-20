@@ -1,19 +1,12 @@
 {
-
-
-
-
-    "reporter": "mochawesome",
-    "reporterOptions": {
-        "reportDir" : "cypress/reports",
-        "files" : "cypress/reports/*.json",
-        "reportFilename" : "report",
-        "overwrite" : false,
-        "html" : false,
-        "json" : true,
-        "charts" : true,
-        "reportPageTitle": "MIT Sloan Regression Test Suite"
+    "baseUrl" : "https://mitsloan.mit.edu/user/login",
+    "env":{
+        "url" : "https://mitsloan.mit.edu/user/login"
     },
-    "video" : false
-
+        "chromeWebSecurity": false,
+        "defaultCommandTimeout":4000,
+        "testFiles": "**/*.feature",
+        "reporter":"mochawesome",
+        "video" : false
+        
 }

@@ -12,7 +12,7 @@ describe('Logout Suite', function() {
    
 
     it('Successful Logout Test', function() {
-        loginPage.login("gayathri.pradeep","password123!")
+        loginPage.login("ashal.anto","password123!")
         logoutPage.logout()
     })
 })

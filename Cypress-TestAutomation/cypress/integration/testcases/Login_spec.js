@@ -1,5 +1,5 @@
 
-// <reference types="cypress" />
+/// <reference types="cypress" />
 
 import LoginPage from '../../pageObjects/LoginPage'
 
@@ -14,8 +14,8 @@ describe('Login Suite', function() {
 
 
     it('Valid Login', function() {
-        loginPage.login("gayathri.pradeep","password123!")
-        loginPage.toolbarItemUser().contains('gayathri.pradeep');
+        loginPage.login("ashal.anto","password123!")
+        loginPage.toolbarItemUser().contains('ashal.anto');
     })
 
 })

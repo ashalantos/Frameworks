@@ -13,6 +13,8 @@ class LoginPage
         this.email_tb().type(username)
         this.password_tb().type(password)
         this.submit_btn().click()
+
+        
     }
 
 

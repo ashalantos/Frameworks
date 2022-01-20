@@ -5,8 +5,8 @@ describe('HomePage Suite', function() {
     const loginPage = new LoginPage()
 
     it('Valid Login', function() {
-        loginPage.login("gayathri.pradeep","password123!")
-        loginPage.toolbarItemUser().contains('gayathri.pradeep');
+        loginPage.login("ashal.anto","password123!")
+        loginPage.toolbarItemUser().contains('ashal.anto');
     })
 
 })
